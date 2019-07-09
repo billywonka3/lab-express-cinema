@@ -1,0 +1,15 @@
+<div> 
+  <h4> Ironhack Cinema </h4>
+  <h6> Click on the movie to check showtimes! </h6>
+</div>
+<div class="dataContainer">
+    {{#each moviesList}}
+        <div id="main-background">
+            <img src={{this.image}} alt="Image not found">
+            <div class="eachTitle">
+                <h6>{{this.title}}</h6>
+                <a href="/movies/{{this.id}}">See More</a>
+            </div>
+        </div>
+    {{/each}}
+</div>
